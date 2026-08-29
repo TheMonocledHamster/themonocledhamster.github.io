@@ -17,7 +17,7 @@ cv:
     Publications:
       - title: COUNSEL - Cloud Resource Configuration Management using Deep Reinforcement Learning
         authors:
-          - '**Adithya Hegde**'
+          - "**Adithya Hegde**"
           - Sameer G. Kulkarni
           - Abhinandan S. Prasad
         doi: 10.1109/ccgrid57682.2023.00035
@@ -62,7 +62,7 @@ cv:
           - Operating Systems, Analysis and Design of Algorithms, Data Structures, Database Systems, Cloud Computing, Discrete Mathematics, Computer Architecture
           - Merit Scholarship (full tuition waiver for all semesters), awarded for top entrance rank.
     Projects:
-      - name: '[POWER RTL-to-C Transpiler](https://arxiv.org/abs/2306.08701)'
+      - name: "[POWER RTL-to-C Transpiler](https://arxiv.org/abs/2306.08701)"
         date: 2023-06
         highlights:
           - Built a transpiler translating ISA pseudocode into executable simulation models for gem5-based microarchitectural performance experiments.

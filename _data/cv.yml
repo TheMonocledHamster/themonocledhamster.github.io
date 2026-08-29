@@ -49,7 +49,6 @@ cv:
           - Built a schema-driven validation tool that generated record-level checks from external specifications and reduced repeated processing during failure diagnosis.
     Education:
       - institution: Georgia Institute of Technology
-        location: Atlanta, GA
         area: Computer Science
         degree: MS
         start_date: 2026-08

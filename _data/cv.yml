@@ -5,7 +5,7 @@ cv:
   address:
     city: Atlanta
     region: GA
-  summary: Engineer and researcher focused on distributed systems, data infrastructure, and execution engines, with experience building and optimizing large-scale production systems. Strong background in performance analysis, reliability debugging, and systems design across Python and JVM runtimes.
+  summary: Graduate student with industry experience in data systems and distributed data processing. Previously worked on Spark- and Databricks-based production data platforms, including performance tuning, workflow design, and production debugging. Research interests include resource management, distributed systems, and systems for machine learning.
   social_networks:
     - network: LinkedIn
       username: adithya-hegde
@@ -13,7 +13,7 @@ cv:
       username: TheMonocledHamster
   sections:
     Research Interests:
-      - bullet: Distributed Systems, Cloud Infrastructure, Data Systems, Resource Management, Fault Tolerance, and Systems for ML
+      - bullet: Data Systems, Resource Management, Systems for ML, Distributed Systems, and Cloud Infrastructure
     Publications:
       - title: COUNSEL - Cloud Resource Configuration Management using Deep Reinforcement Learning
         authors:
@@ -23,33 +23,30 @@ cv:
         doi: 10.1109/ccgrid57682.2023.00035
         date: 2023-05
         publisher: "IEEE/ACM CCGRID 2023"
-        summary: Proposed a DRL-based framework for cloud resource configuration using queueing-based service-chain modeling, and evaluated system performance under simulated workloads. Artifacts available on GitHub [(Counsel)](https://github.com/TheMonocledHamster/Counsel).
+        summary: Co-developed a DRL-based framework for cloud resource configuration and evaluated it using simulated multi-component workloads. Artifacts available on GitHub [(Counsel)](https://github.com/TheMonocledHamster/Counsel).
     Experience:
       - company: JPMorgan Chase & Co.
         position: Software Engineer II
         start_date: 2025-01
-        end_date: present
+        end_date: 2026
         highlights:
-          - Redesigned a Spark execution workflow to eliminate external state synchronization (Databricks-DynamoDB), simplifying execution semantics and reducing failure modes while improving throughput by up to 80%.
-          - Reduced Spark job runtime (~10 mins -> 1.5 mins) by optimizing logical and physical execution plans and introducing data-dependent DAG construction to eliminate redundant stages.
-          - Mitigated shuffle bottlenecks through partitioning strategy redesign and parallelism tuning, reducing cluster size from 10 XL to 3 2XL nodes without performance degradation.
-          - Identified query performance bottlenecks via Spark execution plans and Databricks query profiles; optimized table partitioning to improve predicate pushdown and data skipping (65% -> 98%), reducing query latency (~5 mins to ~10s).
-          - Introduced an input-aware short-circuit in an ingestion workflow, rerouting zero-record files via a Lambda control path, cutting processing time from minutes to milliseconds and reducing overall compute usage by ~20%.
-          - Debugged complex production issues at the Python-Spark JVM boundary in PySpark workloads, identifying and resolving undefined and non-deterministic behavior across execution layers.
+          - Redesigned a Spark workflow that previously relied on external state synchronization between Databricks and DynamoDB, simplifying the workflow and improving throughput by up to 80% for larger workloads.
+          - Added an input-aware short-circuit to avoid unnecessary Spark processing for empty inputs, reducing processing time and compute usage.
+          - Investigated production performance and correctness issues in PySpark workloads, including issues spanning Python, Spark, and JVM execution.
       - company: JPMorgan Chase & Co.
         position: Software Engineer I
         start_date: 2023-07
         end_date: 2024-12
         highlights:
-          - Profiled memory growth of a Polars-based transformation running in AWS Lambda's constrained runtime; introduced lazy evaluation and explicit object lifecycle control, reducing peak memory allocation by 60% and stabilizing execution latency.
-          - Brought up a multi-node ingestion system on Kubernetes (EKS + NiFi), implemented Airflow orchestration for distributed workflows, and operated cross-service data movement pipelines in production.
-          - Accelerated promotion to Software Engineer II for ownership of distributed data infrastructure and performance debugging in production systems.
+          - Profiled a Polars transformation running in AWS Lambda and used lazy evaluation and object-lifecycle changes to reduce peak memory usage by approximately 60%.
+          - Worked on a multi-node ingestion system using EKS and NiFi, with Airflow orchestration for data workflows.
+          - Promoted to Software Engineer II in January 2025.
       - company: JPMorgan Chase & Co.
         position: Software Engineer Intern
         start_date: 2023-01
         end_date: 2023-06
         highlights:
-          - Implemented a schema-driven validation tool generating record-level checks from external specifications, eliminating iterative reprocessing and reducing failure diagnosis time by 95%.
+          - Built a schema-driven validation tool that generated record-level checks from external specifications and reduced repeated processing during failure diagnosis.
     Education:
       - institution: Georgia Institute of Technology
         location: Atlanta, GA
@@ -71,11 +68,11 @@ cv:
           - Built a transpiler translating ISA pseudocode into executable simulation models for gem5-based microarchitectural performance experiments.
     Skills:
       - name: Languages
-        keywords: [Python, Java, SQL, "Familiarity with Rust"]
-      - name: Systems
-        keywords: [Linux, Apache Spark, Databricks, Airflow, Kubernetes]
-      - name: Core Areas
-        keywords: [Distributed Execution, Query Optimization, Fault Diagnosis, Performance Tuning, Data Infrastructure]
+        keywords: [Python, Java, SQL]
+      - name: Tools / Platforms
+        keywords: [Spark, Databricks, Airflow, Kubernetes, Linux]
+      - name: Experience
+        keywords: [Data processing, Spark performance tuning, Workflow orchestration, Production debugging]
     Teaching Experience:
       - label: DevOps Workshop
         details: Designed and delivered a five-day hands-on workshop for faculty at Vidhyavardhaka College of Engineering, Mysuru, covering containerization, CI/CD, and deployment workflows for distributed systems.

@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: MSCS student at the Georgia Institute of Technology, Atlanta.
+subtitle: MSCS student at Georgia Tech.
 profile: false
 selected_papers: false
 social: true
@@ -12,8 +12,8 @@ latest_posts:
   enabled: false
 ---
 
-I am a computer science graduate student at Georgia Tech and an engineer focused on distributed systems, data infrastructure, and execution engines. My work sits at the intersection of production systems and systems research: diagnosing performance and reliability problems, designing scalable data workflows, and turning measurements into simpler, faster systems.
+I am an MSCS student at Georgia Tech with a background in data systems, machine learning, and cloud resource management. Before graduate school, I worked at JPMorgan Chase on production data platforms, primarily using Spark, Databricks, Airflow, and Kubernetes.
 
-At JPMorgan Chase, I have worked on Spark and cloud data platforms, with experience spanning query optimization, distributed execution, fault diagnosis, and Python/JVM runtime behavior. I am especially interested in resource management, fault tolerance, cloud infrastructure, and systems for machine learning.
+My industry work has involved performance tuning, distributed data processing, workflow design, and production debugging. I am now interested in moving deeper into computer systems, particularly resource management and systems for machine learning.
 
-Previously, I completed a B.E. in Computer Science and Engineering at The National Institute of Engineering, supported by a full-tuition merit scholarship. My research on deep reinforcement learning for cloud resource configuration appeared at IEEE/ACM CCGRID 2023.
+I completed a B.E. in Computer Science and Engineering at The National Institute of Engineering, where I worked on deep reinforcement learning for cloud resource configuration. That work appeared at IEEE/ACM CCGRID 2023.

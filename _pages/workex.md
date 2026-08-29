@@ -21,7 +21,7 @@ nav_order: 3
 
 - Profiled a Polars transformation running in AWS Lambda and used lazy evaluation and object-lifecycle changes to reduce peak memory usage by approximately 60%.
 - Worked on a multi-node ingestion system using EKS and NiFi, with Airflow orchestration for data workflows.
-- Promoted to Software Engineer II in January 2025.
+- Early Promotion to Software Engineer II in January 2025.
 
 ### Software Engineer Intern
 *January 2023 - June 2023*

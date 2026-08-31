@@ -12,8 +12,8 @@ latest_posts:
   enabled: false
 ---
 
-I am an MSCS student at Georgia Tech focused on computer systems, with prior experience spanning data platforms, machine learning, and cloud resource management. Before graduate school, I worked at JPMorgan Chase on production data infrastructure built around Spark, Databricks, Airflow, and Kubernetes.
+I am an MSCS student at Georgia Tech focused on computing systems, particularly resource management and systems for machine learning. My background is in large-scale data platforms, machine learning, and cloud resource management. Before graduate school, I worked at JPMorgan Chase on production data infrastructure using Spark, Databricks, Airflow, and Kubernetes.
 
-That work exposed me to distributed execution, performance bottlenecks, resource behavior, workflow orchestration, and production debugging at scale. I am now building on that experience by moving deeper into systems, with particular interests in resource management, distributed systems, and systems for machine learning.
+Working with these systems gave me practical exposure to distributed computation, performance and resource bottlenecks, orchestration, and failure diagnosis. I am now interested in moving from operating and optimizing such systems toward understanding and building the underlying system mechanisms themselves.
 
 I completed a B.E. in Computer Science and Engineering at The National Institute of Engineering, where I worked on deep reinforcement learning for cloud resource configuration. That work appeared at IEEE/ACM CCGRID 2023.

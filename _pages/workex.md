@@ -11,7 +11,7 @@ nav_order: 3
 
 ### Software Engineer II
 
-_January 2025 - 2026_
+_January 2025 - July 2026_
 
 - Redesigned a Spark workflow that previously relied on external state synchronization between Databricks and DynamoDB, simplifying the workflow and improving throughput by up to 80% for larger workloads.
 - Added an input-aware short-circuit to avoid unnecessary Spark processing for empty inputs, reducing processing time and compute usage.

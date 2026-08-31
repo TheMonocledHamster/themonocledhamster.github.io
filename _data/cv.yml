@@ -28,7 +28,7 @@ cv:
       - company: JPMorgan Chase & Co.
         position: Software Engineer II
         start_date: 2025-01
-        end_date: 2026
+        end_date: 2026-07
         highlights:
           - Redesigned a Spark workflow that previously relied on external state synchronization between Databricks and DynamoDB, simplifying the workflow and improving throughput by up to 80% for larger workloads.
           - Added an input-aware short-circuit to avoid unnecessary Spark processing for empty inputs, reducing processing time and compute usage.

@@ -18,4 +18,4 @@ Working with these systems gave me practical exposure to distributed computation
 
 I completed a B.E. in Computer Science and Engineering at The National Institute of Engineering, where I worked on deep reinforcement learning for cloud resource configuration. That work appeared at IEEE/ACM CCGRID 2023.
 
-Email: ahegde83[at]gatech[dot]edu
+Email: ahegde83 [at] gatech [dot] edu

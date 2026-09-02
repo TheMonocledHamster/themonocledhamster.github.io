@@ -2,7 +2,6 @@
 layout: page
 title: work experience
 permalink: /work-experience/
-description: Production data-platform engineering.
 nav: true
 nav_order: 3
 ---

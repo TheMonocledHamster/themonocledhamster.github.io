@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: work experience
 permalink: /work-experience/
 nav: true

@@ -13,7 +13,7 @@ Atlanta
 
 ## The National Institute of Engineering
 
-**B.E. in Computer Science and Engineering** · August 2019–June 2023
+**B.E. in Computer Science and Engineering** · August 2019–June 2023  
 Mysuru
 
 - Merit Scholarship (full tuition waiver for all semesters), awarded for top entrance rank.

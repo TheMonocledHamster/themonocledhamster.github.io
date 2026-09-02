@@ -2,9 +2,7 @@ cv:
   name: Adithya Hegde
   headline: MSCS Student, Georgia Institute of Technology
   location: Atlanta, GA
-  custom_connections:
-    - placeholder: ahegde83[at]gatech[dot]edu
-      fontawesome_icon: envelope
+  email: ahegde83[at]gatech[dot]edu
   summary: Graduate student with industry experience in data systems and distributed data processing. Previously worked on Spark- and Databricks-based production data platforms, including performance tuning, workflow design, and production debugging. Research interests include resource management, distributed systems, and systems for machine learning.
   social_networks:
     - network: LinkedIn

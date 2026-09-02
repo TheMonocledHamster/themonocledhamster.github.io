@@ -2,7 +2,6 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Research publications and artifacts.
 nav: true
 nav_order: 2
 ---

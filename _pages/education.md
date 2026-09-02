@@ -2,7 +2,6 @@
 layout: page
 title: education
 permalink: /education/
-description: Academic background.
 nav: true
 nav_order: 4
 ---

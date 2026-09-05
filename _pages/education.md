@@ -8,7 +8,7 @@ nav_order: 4
 
 ## Georgia Institute of Technology
 
-**M.S. in Computer Science** · 2026–Present  
+**M.S. in Computer Science** · August 2026–  
 Atlanta
 
 ## The National Institute of Engineering

@@ -8,12 +8,12 @@ nav_order: 4
 
 ## Georgia Institute of Technology
 
-**M.S. in Computer Science** · August 2026–  
+**M.S. in Computer Science** · August 2026 –  
 Atlanta
 
 ## The National Institute of Engineering
 
-**B.E. in Computer Science and Engineering** · August 2019–June 2023  
+**B.E. in Computer Science and Engineering** · August 2019 – June 2023  
 Mysuru
 
 - Merit Scholarship (full tuition waiver for all semesters), awarded for top entrance rank.

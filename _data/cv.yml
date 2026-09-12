@@ -1,9 +1,9 @@
 cv:
   name: Adithya Hegde
-  headline: MSCS Student, Georgia Institute of Technology
+  headline: MSCS - Computing Systems Student, Georgia Institute of Technology
   location: Atlanta, GA
   email: ahegde83[at]gatech[dot]edu
-  summary: Graduate student with industry experience in data systems and distributed data processing. Previously worked on Spark- and Databricks-based production data platforms, including performance tuning, workflow design, and production debugging. Research interests include resource management, distributed systems, and systems for machine learning.
+  summary: MS in Computer Science - Computing Systems and MS Research Fellow at Georgia Tech. Owned the technical design and implementation of a new Spark-based data platform at JPMorgan Chase. Building the platform required understanding the systems beneath the application, motivating a move toward systems engineering. Research interests include resource management, distributed systems, and systems for machine learning.
   social_networks:
     - network: LinkedIn
       username: adithya-hegde
@@ -28,29 +28,33 @@ cv:
         start_date: 2025-01
         end_date: 2026-07
         highlights:
-          - Redesigned a Spark workflow that previously relied on external state synchronization between Databricks and DynamoDB, simplifying the workflow and improving throughput by up to 80% for larger workloads.
-          - Added an input-aware short-circuit to avoid unnecessary Spark processing for empty inputs, reducing processing time and compute usage.
-          - Investigated production performance and correctness issues in PySpark workloads, including issues spanning Python, Spark, and JVM execution.
+          - Owned the end-to-end technical design and implementation of a new Spark-based data platform replacing legacy processing systems, from architecture through production rollout.
+          - Redesigned platform execution to eliminate Databricks-DynamoDB state synchronization, removing a fragile distributed dependency and improving throughput by up to 80%.
+          - Reduced runtime of a complex ~60-operation Spark DAG processing 1-10M records from ~10 minutes to ~1.5 minutes through logical-plan optimization and data-dependent DAG construction.
+          - Redesigned partitioning and tuned parallelism to mitigate shuffle bottlenecks, reducing cluster compute costs by ~40% without performance degradation.
+          - Optimized table partitioning using Spark execution plans and Databricks query profiles, increasing data skipping from 65% to 98% and reducing dashboard refresh latency from ~5 minutes to ~10 seconds.
       - company: JPMorgan Chase & Co.
         position: Software Engineer I
         start_date: 2023-07
         end_date: 2024-12
         highlights:
-          - Profiled a Polars transformation running in AWS Lambda and used lazy evaluation and object-lifecycle changes to reduce peak memory usage by approximately 60%.
-          - Worked on a multi-node ingestion system using EKS and NiFi, with Airflow orchestration for data workflows.
-          - Promoted to Software Engineer II in January 2025.
+          - Profiled memory growth of a Polars-based transformation in AWS Lambda; introduced lazy evaluation and explicit object lifecycle control, reducing peak memory allocation by 60% and stabilizing execution latency.
+          - Brought up a multi-node ingestion system on Kubernetes (EKS + NiFi), implemented Airflow orchestration for distributed workflows, and operated cross-service data movement pipelines in production.
+          - Earned accelerated promotion to Software Engineer II for ownership of distributed data infrastructure and production performance engineering.
       - company: JPMorgan Chase & Co.
         position: Software Engineer Intern
         start_date: 2023-01
         end_date: 2023-06
         highlights:
-          - Built a schema-driven validation tool that generated record-level checks from external specifications and reduced repeated processing during failure diagnosis.
+          - Implemented a schema-driven validation tool generating record-level checks from external specifications, eliminating iterative reprocessing and reducing failure diagnosis time by 95%.
     Education:
       - institution: Georgia Institute of Technology
-        area: Computer Science
+        area: Computer Science - Computing Systems
         degree: MS
         start_date: 2026-08
         end_date: present
+        highlights:
+          - MS Research Fellow
       - institution: The National Institute of Engineering
         area: Computer Science and Engineering
         degree: BE

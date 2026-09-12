@@ -8,8 +8,11 @@ nav_order: 4
 
 ## Georgia Institute of Technology
 
-**M.S. in Computer Science** · August 2026 – Now  
+**MS in Computer Science - Computing Systems** · August 2026 – Present
+
 Atlanta
+
+- MS Research Fellow
 
 ## The National Institute of Engineering
 

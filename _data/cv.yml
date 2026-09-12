@@ -1,9 +1,9 @@
 cv:
   name: Adithya Hegde
-  headline: MSCS - Computing Systems Student, Georgia Institute of Technology
+  headline: MSCS @ Georgia Institute of Technology
   location: Atlanta, GA
   email: ahegde83[at]gatech[dot]edu
-  summary: MS in Computer Science - Computing Systems and MS Research Fellow at Georgia Tech. Owned the technical design and implementation of a new Spark-based data platform at JPMorgan Chase. Building the platform required understanding the systems beneath the application, motivating a move toward systems engineering. Research interests include resource management, distributed systems, and systems for machine learning.
+  summary: MSCS Computing Systems and MS Research Fellow at Georgia Tech. Owned the technical design and implementation of a new Spark-based data platform at JPMorgan Chase. Building the platform required understanding the systems beneath the application, motivating a move toward systems engineering. Research interests include resource management, distributed systems, and systems for machine learning.
   social_networks:
     - network: LinkedIn
       username: adithya-hegde

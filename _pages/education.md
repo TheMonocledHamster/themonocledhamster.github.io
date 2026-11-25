@@ -8,7 +8,8 @@ nav_order: 4
 
 ## Georgia Institute of Technology
 
-**MS in Computer Science - Computing Systems** · August 2026 – Present  
+**MS in Computer Science - Computing Systems** · August 2026 – Expected May 2028
+
 Atlanta
 
 - MS Research Fellow

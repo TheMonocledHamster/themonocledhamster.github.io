@@ -2,8 +2,8 @@
   "basics": {
     "name": "Adithya Hegde",
     "label": "MSCS - Computing Systems Student, Georgia Institute of Technology",
-    "email": "ahegde83[at]gatech[dot]edu",
-    "summary": "MS in Computer Science - Computing Systems student and MS Research Fellow at Georgia Tech. Owned the technical design and implementation of a new Spark-based data platform at JPMorgan Chase. Building the platform required understanding the systems beneath the application, motivating a move toward systems engineering. Research interests include resource management, distributed systems, and systems for machine learning.",
+    "email": "ahegde[at]gatech[dot]edu",
+    "summary": "MS in Computer Science - Computing Systems student at Georgia Tech. Owned the technical design and implementation of a Spark-based data platform that replaced a legacy data processing system that used Hadoop and Informatica at JPMorgan Chase. Building the platform required understanding the systems beneath the application, motivating a move toward systems engineering. Research interests include resource management, distributed systems, systems for machine learning, and data systems.",
     "location": {
       "city": "Atlanta",
       "region": "GA",
@@ -29,9 +29,9 @@
       "startDate": "2025-01",
       "endDate": "2026-07",
       "highlights": [
-        "Owned the end-to-end technical design and implementation of a new Spark-based data platform replacing legacy processing systems, from architecture through production rollout.",
+        "Owned the end-to-end technical design and implementation of a Spark-based data platform that replaced a legacy stack that used a proprietary DSL on Hadoop alongside Informatica ETL, from architecture through production rollout.",
         "Redesigned platform execution to eliminate Databricks-DynamoDB state synchronization, removing a fragile distributed dependency and improving throughput by up to 80%.",
-        "Reduced runtime of a complex ~60-operation Spark DAG processing 1-10M records from ~10 minutes to ~1.5 minutes through logical-plan optimization and data-dependent DAG construction.",
+        "Built an application-layer generator that automatically produced workload-optimized DAGs for Spark to execute. On a sparse-correction workload with a ~60-operation DAG and up to 10 million records, it cut runtime by 85%, from about 10 minutes to 1.5 minutes.",
         "Redesigned partitioning and tuned parallelism to mitigate shuffle bottlenecks, reducing cluster compute costs by ~40% without performance degradation.",
         "Optimized table partitioning using Spark execution plans and Databricks query profiles, increasing data skipping from 65% to 98% and reducing dashboard refresh latency from ~5 minutes to ~10 seconds."
       ]
@@ -121,7 +121,8 @@
       "name": "Systems for ML"
     },
     {
-      "name": "Data Systems"
+      "name": "Data Systems",
+      "keywords": ["Databases", "Large-scale data processing", "Data transfer"]
     },
     {
       "name": "Cloud Infrastructure"

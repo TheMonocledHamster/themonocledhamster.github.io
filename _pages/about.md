@@ -12,10 +12,12 @@ latest_posts:
   enabled: false
 ---
 
-I am pursuing an MSCS at Georgia Tech, where I am an MS Research Fellow. I am interested in systems engineering, particularly resource management, distributed systems, and systems for machine learning.
+I am pursuing an MS in Computer Science with a specialization in Computing Systems at Georgia Tech. In the Systems for AI Lab, I built gRPC speech recognition workers for MetaServe. I also serve as a graduate teaching assistant at GeorgiaTech.
 
-At JPMorgan Chase, I owned the end-to-end technical design and implementation of a new Spark-based data platform replacing legacy processing systems. Building the application required me to understand the systems beneath it: execution plans, DAG structure, shuffles, partitioning, synchronization, and runtime behavior. Across my work at JPMorgan, I also investigated memory usage and performance bottlenecks. These became the parts of the work I found most interesting and motivated my move toward systems engineering and my MS in Computing Systems.
+My main interests are resource management, distributed systems, and systems for machine learning. I’m also interested in data systems, especially databases, large-scale data processing, and how data moves between systems.
+
+At JPMorgan Chase, I owned the technical design and implementation of a distributed data processing platform built with PySpark and Java, from architecture through production rollout. The platform replaced a legacy data processing system that used Hadoop and Informatica. Optimizing Spark execution plans, partitioning, and memory usage drew me toward systems engineering.
 
 I completed a B.E. in Computer Science and Engineering at The National Institute of Engineering, where, as an undergraduate researcher, I worked on COUNSEL, a deep reinforcement learning framework for cloud resource configuration. That work appeared at IEEE/ACM CCGRID 2023.
 
-Email: ahegde83 [at] gatech [dot] edu
+Email: ahegde [at] gatech [dot] edu

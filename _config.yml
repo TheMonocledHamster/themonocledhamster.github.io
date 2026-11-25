@@ -9,10 +9,10 @@ last_name: Hegde
 contact_note: >
   I am best reached by email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Adithya Hegde - MSCS - Computing Systems student and MS Research Fellow at Georgia Tech, moving from data platforms toward systems engineering.
+  Adithya Hegde is an MSCS student at Georgia Tech who works in the Systems for AI Lab. His interests include distributed systems, resource management, systems for machine learning, and data systems.
 footer_text: >
   Built with <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a>.
-keywords: computing systems, systems engineering, distributed systems, data platforms, resource management, performance engineering
+keywords: computing systems, systems engineering, distributed systems, data platforms, data systems, databases, resource management, performance engineering
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🖥️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 apple_touch_icon: # image name in /assets/img/ (or a rooted path / absolute URL) used for iOS home-screen bookmarks; needs a real 180x180 PNG, since Safari ignores the emoji favicon above. Left empty, iOS falls back to a screenshot of the page.

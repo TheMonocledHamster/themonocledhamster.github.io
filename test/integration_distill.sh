@@ -18,7 +18,8 @@ giscus:
   category_id: DIC_kwDOExample
 YAML
 
-bundle exec jekyll build --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
+bundle exec jekyll build --source test/fixtures/jekyll --disable-disk-cache \
+  --config "_config.yml,${tmp_override}" -d "${tmp_site}" >/dev/null
 
 distill_page="${tmp_site}/blog/2021/distill/index.html"
 

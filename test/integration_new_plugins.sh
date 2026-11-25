@@ -17,7 +17,8 @@ build() {
   local name="$1"
   shift
   local out="${tmp_dir}/site-${name}"
-  bundle exec jekyll build "$@" -d "${out}" >/dev/null
+  bundle exec jekyll build --source test/fixtures/jekyll --disable-disk-cache \
+    "$@" -d "${out}" >/dev/null || return
   echo "${out}"
 }
 
@@ -28,7 +29,9 @@ fail() {
 
 # --- al_rtl -----------------------------------------------------------------
 
-default_site="$(build default)"
+unprotected_override="${tmp_dir}/unprotected.yml"
+printf 'protect_email: false\n' >"${unprotected_override}"
+default_site="$(build default --config "_config.yml,${unprotected_override}")"
 
 rtl_page="${default_site}/blog/2022/rtl/index.html"
 [ -f "${rtl_page}" ] || fail "RTL demo post was not built"
@@ -69,9 +72,7 @@ grep -q 'al_marimo' "${default_site}/index.html" && fail "home page wrongly load
 
 # --- al_email_protect -------------------------------------------------------
 
-# Off by default, so this builds with an override rather than changing the
-# shipped config: turning it on for the demo site would flip the default for
-# everyone who copies this template.
+# Exercise both settings independently of the personal site's configuration.
 override="${tmp_dir}/protect-email.yml"
 printf 'protect_email: true\n' >"${override}"
 protected_site="$(build protected --config "_config.yml,${override}")"
@@ -92,7 +93,7 @@ grep -q 'assets/al_email_protect/css/email-protect.css' "${protected_site}/index
 [ -f "${protected_site}/assets/al_email_protect/css/email-protect.css" ] \
   || fail "email-protect stylesheet referenced but not published"
 
-# ...and with it off (the default), the plugin costs nothing.
+# With the feature off, its assets are absent.
 grep -q 'al_email_protect' "${default_site}/index.html" \
   && fail "email-protect assets loaded while disabled"
 

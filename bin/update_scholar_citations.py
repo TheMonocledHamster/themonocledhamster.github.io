@@ -7,7 +7,7 @@ from datetime import datetime
 from scholarly import scholarly
 
 
-def load_scholar_user_id() -> str:
+def load_scholar_user_id() -> str | None:
     """Load the Google Scholar user ID from the configuration file."""
     config_file = "_data/socials.yml"
     if not os.path.exists(config_file):
@@ -17,14 +17,8 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
     try:
         with open(config_file, "r") as f:
-            config = yaml.safe_load(f)
-        scholar_user_id = config.get("scholar_userid")
-        if not scholar_user_id:
-            print(
-                "No 'scholar_userid' found in the configuration file. Please add 'scholar_userid' to _data/socials.yml."
-            )
-            sys.exit(1)
-        return scholar_user_id
+            config = yaml.safe_load(f) or {}
+        return config.get("scholar_userid")
     except yaml.YAMLError as e:
         print(
             f"Error parsing YAML file {config_file}: {e}. Please check the file for correct YAML syntax."
@@ -32,20 +26,25 @@ def load_scholar_user_id() -> str:
         sys.exit(1)
 
 
-SCHOLAR_USER_ID: str = load_scholar_user_id()
 OUTPUT_FILE: str = "_data/citations.yml"
 
 
 def get_scholar_citations() -> None:
     """Fetch and update Google Scholar citation data."""
-    print(f"Fetching citations for Google Scholar ID: {SCHOLAR_USER_ID}")
+    scholar_user_id = load_scholar_user_id()
+    if not scholar_user_id:
+        print("No Google Scholar ID configured. Skipping citation updates.")
+        return
+
+    print(f"Fetching citations for Google Scholar ID: {scholar_user_id}")
     today = datetime.now().strftime("%Y-%m-%d")
+    existing_data = {}
 
     # Check if the output file was already updated today
     if os.path.exists(OUTPUT_FILE):
         try:
             with open(OUTPUT_FILE, "r") as f:
-                existing_data = yaml.safe_load(f)
+                existing_data = yaml.safe_load(f) or {}
             if (
                 existing_data
                 and "metadata" in existing_data
@@ -59,28 +58,29 @@ def get_scholar_citations() -> None:
             print(
                 f"Warning: Could not read existing citation data from {OUTPUT_FILE}: {e}. The file may be missing or corrupted."
             )
+            existing_data = {}
 
     citation_data = {"metadata": {"last_updated": today}, "papers": {}}
 
     scholarly.set_timeout(15)
     scholarly.set_retries(3)
     try:
-        author = scholarly.search_author_id(SCHOLAR_USER_ID)
+        author = scholarly.search_author_id(scholar_user_id)
         author_data = scholarly.fill(author)
     except Exception as e:
         print(
-            f"Error fetching author data from Google Scholar for user ID '{SCHOLAR_USER_ID}': {e}. Please check your internet connection and Scholar user ID."
+            f"Error fetching author data from Google Scholar for user ID '{scholar_user_id}': {e}. Please check your internet connection and Scholar user ID."
         )
         sys.exit(1)
 
     if not author_data:
         print(
-            f"Could not fetch author data for user ID '{SCHOLAR_USER_ID}'. Please verify the Scholar user ID and try again."
+            f"Could not fetch author data for user ID '{scholar_user_id}'. Please verify the Scholar user ID and try again."
         )
         sys.exit(1)
 
     if "publications" not in author_data:
-        print(f"No publications found in author data for user ID '{SCHOLAR_USER_ID}'.")
+        print(f"No publications found in author data for user ID '{scholar_user_id}'.")
         sys.exit(1)
 
     for pub in author_data["publications"]:

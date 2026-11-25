@@ -12,7 +12,7 @@ latest_posts:
   enabled: false
 ---
 
-I am pursuing an MS in Computer Science with a specialization in Computing Systems at Georgia Tech. In the Systems for AI Lab, I built gRPC speech recognition workers for MetaServe. I also serve as a graduate teaching assistant at GeorgiaTech.
+I am pursuing an MS in Computer Science with a specialization in Computing Systems at Georgia Tech.
 
 My main interests are resource management, distributed systems, and systems for machine learning. I’m also interested in data systems, especially databases, large-scale data processing, and how data moves between systems.
 
